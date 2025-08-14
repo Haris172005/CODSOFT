@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #c2e9fb, #a0d2eb, #f7faff, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header.hero {
+  text-align: center;
+  background: linear-gradient(to right, #a0d2eb, #c2e9fb);
+  padding: 60px 20px;
+}
+
+header.hero h1 { font-size: 2.5rem; }
+header.hero span { color: #0077cc; }
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 4px solid #a0d2eb;
+}
+
+/* Skills */
+.skill-tags span {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.skill-tags span:hover {
+  transform: scale(1.1);
+  background: #005fa3;
+}
+
+/* Cards (Projects & Internships) */
+.project-card, .internship {
+  background: #e8f4fd;
+  padding: 20px;
+  border-left: 5px solid #0077cc;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.project-card:hover, .internship:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+}
+.certificate-card {
+  display: inline-block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.certificate-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+.certificate-card img {
+  width: 350px;
+  max-width: 90%;
+  display: block;
+}
+.btn-view {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+.btn-view:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 119, 204, 0.3);
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+footer a { color: #fff; text-decoration: underline; }
