@@ -83,9 +83,11 @@ section {
 .certificate-card {
   display: inline-block;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding-bottom: 3%;
+  
 }
 .certificate-card:hover {
   transform: scale(1.03);
@@ -95,6 +97,10 @@ section {
   width: 350px;
   max-width: 90%;
   display: block;
+  padding-left: 5%;
+  padding-top: 5%;
+  
+  
 }
 .btn-view {
   display: inline-block;
@@ -106,6 +112,7 @@ section {
   border-radius: 8px;
   transition: background 0.3s ease, transform 0.3s ease;
   font-weight: 500;
+  padding-bottom: %;
 }
 .btn-view:hover {
   background-color: #005fa3;
