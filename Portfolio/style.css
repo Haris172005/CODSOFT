@@ -19,7 +19,7 @@ body {
 ======================= */
 header.hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 20px 40px;
 }
 
 header.hero h1 {
@@ -64,19 +64,21 @@ section:hover {
 ======================= */
 .about {
   display: flex;
-  gap: 30px;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: nowrap;   /* 🔥 IMPORTANT */
 }
-
+.about-text {
+  flex: 1;
+}
 .about img {
   width: 180px;
   height: 180px;
   border-radius: 20px;
   object-fit: cover;
-  border: 3px solid rgba(110, 203, 255, 0.6);
-  box-shadow: 0 10px 25px rgba(79, 163, 255, 0.35);
+  flex-shrink: 0; 
 }
+
 
 /* =======================
    SKILLS
